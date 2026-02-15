@@ -171,8 +171,8 @@ import { writeFile } from "node:fs/promises"
 {
   "google_auth": true,
   "agents": {
-    "chief": { "model": "google/antigravity-claude-opus-4-5-thinking-high" },
-    "writer": { "model": "google/antigravity-gemini-3-pro-high", "temperature": 0.7 }
+    "chief": { "model": "imagemetrics/claude-opus-4-6" },
+    "writer": { "model": "imagemetrics/claude-opus-4-6"}
   }
 }
 ```

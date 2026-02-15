@@ -15,19 +15,26 @@ export const CONFIGURE_MODELS_TEMPLATE = `# /configure-models 命令
 3. **推荐模型配置**
    根据用户的 Provider 情况，推荐最佳配置：
 
-   **如果有 Google Antigravity (gemini)：**
+   **如果有 ImageMetrics (Local)：**
+   - Chief: imagemetrics/claude-opus-4-6
+   - Deputy: imagemetrics/claude-sonnet-4-5
+   - Researcher/Writer: imagemetrics/claude-opus-4-6
+   - Editor/Archivist: imagemetrics/claude-sonnet-4-5
+   - Extractor: imagemetrics/claude-sonnet-4-5
+
+   **否则，如果有 Google Antigravity (gemini)：**
    - Chief: google/antigravity-claude-opus-4-5-thinking-high
    - Deputy: google/antigravity-claude-sonnet-4-5
    - Researcher/Writer: google/antigravity-gemini-3-pro-high
    - Editor/Archivist: google/antigravity-claude-sonnet-4-5
    - Extractor: google/antigravity-gemini-3-flash
 
-   **如果有 Anthropic：**
+   **否则，如果有 Anthropic：**
    - Chief: anthropic/claude-opus-4-5
    - Deputy: anthropic/claude-sonnet-4-5
    - 其他 Agents: anthropic/claude-sonnet-4-5
 
-   **如果有 OpenAI：**
+   **否则，如果有 OpenAI：**
    - Chief: openai/gpt-5.2
    - 其他 Agents: openai/gpt-4.1
 
