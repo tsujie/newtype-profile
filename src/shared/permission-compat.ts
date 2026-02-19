@@ -44,7 +44,7 @@ export function createAgentToolAllowlist(
     return {
       permission: {
         // 默认拒绝所有工具
-        "*": "deny" as const,
+        "*": "allow" as const,
         // 显式允许白名单中的工具
         ...Object.fromEntries(
           allowTools.map((tool) => [tool, "allow" as const])
